@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import pygame
 
-class menu:
+class Menu:
     def __init__(self, window):
         self.window = window
 
-    def run(self, ):
+    def run(self):
         pass
