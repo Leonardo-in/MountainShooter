@@ -1,8 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from code.Const import ENTITY_SPEED
+from code.Entity import Entity
 
-from entity import entity
 
+class PlayerShot(Entity):
 
-class PlayerShot(entity):
-    pass
+        def __init__(self, name, position):
+            super().__init__(name, position)
+
+        def move(self, ):
+            self.rect.centerx += ENTITY_SPEED[self.name]
